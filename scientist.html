@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杰出科学家 - 筑韵千年</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入ECharts可视化库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="achievement.html">建筑成就</a></li>
+            <li><a href="scientist.html" class="active">杰出科学家</a></li>
+            <li><a href="works.html">建筑著作</a></li>
+            <li><a href="culture.html">文化传承</a></li>
+        </ul>
+    </div>
+
+    <!-- 主体容器 -->
+    <div class="container">
+        <h1 class="page-title">历代建筑巨匠 · 匠心传承</h1>
+        
+        <!-- 盒须图容器 -->
+        <div class="chart-box" id="timelineChart"></div>
+        
+        <!-- 巨匠风采标题 -->
+        <h2 class="page-title" style="font-size: 24px;">巨匠风采</h2>
+        <!-- 科学家卡片容器 -->
+        <div class="card-group" id="scientistCard"></div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        数据来源：古籍记载·权威建筑史资料 | 技术：ECharts + Python + Excel
+    </div>
+
+    <!-- 引入科学家页面专属JS -->
+    <script src="js/scientist.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国古代建筑可视化 - 筑韵千年</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="achievement.html">建筑成就</a></li>
+            <li><a href="scientist.html">杰出科学家</a></li>
+            <li><a href="works.html">建筑著作</a></li>
+            <li><a href="culture.html">文化传承</a></li>
+        </ul>
+    </div>
+
+    <!-- 主体容器 -->
+    <div class="container">
+        <h1 class="home-title">筑韵千年 · 中国古代建筑可视化</h1>
+        <p class="home-desc">探寻千年建筑智慧，传承中华营造文脉</p>
+
+        <!-- 原生轮播图（无外部依赖） -->
+        <div class="carousel" id="carousel">
+            <div class="carousel-item carousel1 active">故宫 · 皇家建筑巅峰</div>
+            <div class="carousel-item carousel2">长城 · 华夏军事奇迹</div>
+            <div class="carousel-item carousel3">苏州园林 · 江南写意山水</div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        数据来源：古籍记载·权威建筑史资料 | 技术：ECharts + Python + 前端可视化
+    </div>
+
+    <!-- 原生轮播图JS逻辑（自动切换） -->
+    <script>
+        // 获取轮播容器和轮播项
+        const carousel = document.getElementById('carousel');
+        const items = carousel.querySelectorAll('.carousel-item');
+        let index = 0;
+        
+        // 切换轮播项函数
+        function showSlide() {
+            items.forEach(item => item.classList.remove('active'));
+            items[index].classList.add('active');
+            index = (index + 1) % items.length; // 循环切换
+        }
+        
+        // 每3秒自动切换
+        setInterval(showSlide, 3000);
+    </script>
+</body>
+</html>

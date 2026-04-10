@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建筑著作 - 筑韵千年</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入ECharts可视化库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏：统一站点导航 -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="achievement.html">建筑成就</a></li>
+            <li><a href="scientist.html">杰出科学家</a></li>
+            <li><a href="works.html" class="active">建筑著作</a></li>
+            <li><a href="culture.html">文化传承</a></li>
+        </ul>
+    </div>
+
+    <!-- 主体内容容器 -->
+    <div class="container">
+        <h1 class="page-title">营造典籍 · 百世流芳</h1>
+        
+        <!-- 雷达图容器（ID与JS严格对应） -->
+        <div class="chart-box" id="radarChart"></div>
+        <!-- 树状图容器 -->
+        <div class="chart-box" id="treeChart"></div>
+        
+        <!-- 经典典籍标题 -->
+        <h2 class="page-title" style="font-size: 24px;">经典典籍</h2>
+        <!-- 著作卡片容器 -->
+        <div class="card-group" id="worksCard"></div>
+    </div>
+
+    <!-- 页脚：数据来源与技术说明 -->
+    <div class="footer">
+        数据来源：古籍记载·权威建筑史资料 | 技术：ECharts + Python + Excel
+    </div>
+
+    <!-- 引入建筑著作页面专属JS -->
+    <script src="js/works.js"></script>
+</body>
+</html>

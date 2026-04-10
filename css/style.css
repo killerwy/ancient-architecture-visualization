@@ -1,0 +1,228 @@
+/* 全局重置与基础样式：统一盒模型、字体、背景色 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", serif;
+}
+body {
+    background-color: #fdf6e3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 导航栏样式：固定顶部、渐变背景、阴影 */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #9c2c1a, #b3422a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.nav a:hover, .nav a.active {
+    background: rgba(255,255,255,0.2);
+}
+
+/* 主体容器：最大宽度、居中、上下间距 */
+.container {
+    max-width: 1400px;
+    margin: 90px auto 40px;
+    padding: 0 20px;
+}
+
+/* 页面标题：居中、颜色、下划线 */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #9c2c1a;
+    margin: 20px 0 40px;
+    position: relative;
+}
+.page-title::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #9c2c1a;
+    display: block;
+    margin: 10px auto;
+}
+
+/* 图表容器：固定高度、背景、阴影、内边距 */
+.chart-box {
+    width: 100%;
+    height: 600px;
+    margin: 30px 0;
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* 卡片容器：弹性布局、换行、间距、居中 */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+/* 卡片样式：固定宽度、背景、阴影、顶部边框 */
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-top: 4px solid #9c2c1a;
+}
+.card h3 {
+    color: #9c2c1a;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* 页脚：居中、背景、颜色、内边距 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #9c2c1a;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* 基础响应式：小屏幕适配导航和图表高度 */
+@media (max-width: 768px) {
+    .nav ul {
+        gap: 20px;
+    }
+    .chart-box {
+        height: 450px;
+    }
+}
+
+/* 首页轮播图样式（国风风格） */
+.carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item.active { opacity: 1; } /* 激活轮播项 */
+/* 轮播图背景图 */
+.carousel1 { background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/gugong.jpg'); }
+.carousel2 { background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/changcheng.jpg'); }
+.carousel3 { background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/suzhouyuanlin.jpg'); }
+/* 首页标题样式 */
+.home-title {
+    text-align: center;
+    font-size: 36px;
+    color: #9c2c1a;
+    margin: 40px 0 20px;
+}
+.home-desc {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* 地域饼图总容器：弹性布局、换行、间距、背景、阴影 */
+.pie-charts-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+/* 单个地域饼图容器：固定尺寸、防溢出 */
+.region-pie-chart {
+    width: calc(20% - 28px);
+    height: 430px;
+    min-width: 240px;
+    overflow: hidden;
+}
+/* 传承结语容器：背景、阴影、内边距 */
+.conclusion {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+/* 结语文字：居中、行高、最大宽度 */
+.conclusion-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 饼图响应式：不同屏幕宽度适配 */
+@media (max-width: 1200px) {
+    .region-pie-chart {
+        width: calc(33.33% - 24px);
+    }
+}
+@media (max-width: 768px) {
+    .region-pie-chart {
+        width: calc(50% - 18px);
+        height: 380px;
+    }
+}
+@media (max-width: 480px) {
+    .region-pie-chart {
+        width: 100%;
+    }
+}

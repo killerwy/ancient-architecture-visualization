@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建筑成就 - 筑韵千年</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入ECharts核心库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <!-- 引入中国地图扩展（修复404报错） -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="achievement.html" class="active">建筑成就</a></li>
+            <li><a href="scientist.html">杰出科学家</a></li>
+            <li><a href="works.html">建筑著作</a></li>
+            <li><a href="culture.html">文化传承</a></li>
+        </ul>
+    </div>
+
+    <!-- 主体容器 -->
+    <div class="container">
+        <h1 class="page-title">建筑成就 · 朝代演变与地域分布</h1>
+        
+        <!-- 折线图容器（各朝代建筑数量） -->
+        <div class="chart-box" id="lineChart"></div>
+        <!-- 地图容器（全国古建筑热力分布） -->
+        <div class="chart-box" id="mapChart"></div>
+        <!-- 新增：地图审图号与来源标注 -->
+        <div class="map-attribution">
+            审图号：GS (2019) 1673 号 | 地图来源：自然资源部标准地图服务系统
+        </div>
+        
+        <!-- 核心建筑标题 -->
+        <h2 class="page-title" style="font-size: 24px;">核心建筑标注</h2>
+        <!-- 核心建筑卡片容器 -->
+        <div class="card-group" id="coreBuildingCard"></div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        数据来源：古籍记载·权威建筑史资料 | 技术：ECharts + Python + Excel
+    </div>
+
+    <!-- 引入建筑成就页面专属JS -->
+    <script src="js/achievement.js"></script>
+</body>
+</html>
