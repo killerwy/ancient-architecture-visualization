@@ -38,6 +38,7 @@ ancient-architecture-visualization is a web-based data visualization project ded
 ```bash
 
 git clone https://github.com/killerwy/ancient-architecture-visualization.git
+cd ancient-architecture-visualizatio
 
 ```
 
