@@ -33,43 +33,97 @@ ancient-architecture-visualization is a web-based data visualization project ded
 
 ## ⚡ Quick Start
 
+1. Clone the repository
+
 ```bash
 
-# 1. Clone the repository
 git clone https://github.com/killerwy/ancient-architecture-visualization.git
 
-# See the Development Setup section below
 ```
+
+2. Start Local Static Server
+
+Choose one solution below in the project root directory:
+  
+Option A: Python Built-in Server
+
+```bash
+
+# Python 3
+python -m http.server 8080
+
+# Python 2
+python -m SimpleHTTPServer 8080
+
+```
+
+Option B: VS Code Live Server
+
+Install the Live Server plugin, right-click index.html> Open with Live Server.
+
+Option C: Node.js Server
+
+```bash
+
+npm install -g http-server
+http-server -p 8080
+
+```
+
+3. Access Project
+
+Open your browser and visit: http://localhost:8080
+
+## 🖥️ Data Processing
+
+1. Install Dependencies
+
+```bash
+
+pip install pandas openpyxl
+
+```
+
+2. Run
+
+```bash
+
+python data-processing.py
+
+```
+
+The success message means JSON data files are updated.
 
 ## 📁 Project Structure
 
 ```
 .
-├── LICENSE
-├── achievement.html
-├── css
-│   └── style.css
-├── culture.html
-├── data
-│   ├── achievement-data.json
-│   ├── architecture-data.xlsx
-│   ├── culture-data.json
-│   ├── scientist-data.json
-│   └── works-data.json
-├── image
-│   ├── changcheng.jpg
+architecture-visualization/
+├── index.html              # Project Homepage
+├── achievement.html        # Architectural Achievements Visualization Page
+├── scientist.html          # Eminent Ancient Architects & Scholars Visualization Page
+├── works.html              # Architectural Literature Visualization Page
+├── culture.html            # Architectural Culture Inheritance Visualization Page
+├── css/
+│   └── style.css           # Global unified styles (including responsive layout rules)
+├── js/
+│   ├── achievement.js      # Chart rendering & interaction logic for Achievements page
+│   ├── scientist.js        # Chart rendering & interaction logic for Scholars page
+│   ├── works.js            # Chart rendering & interaction logic for Literature page
+│   └── culture.js          # Chart rendering & interaction logic for Culture page
+├── data/
+│   ├── architecture-data.xlsx  # Raw master data table (structured with multiple worksheets)
+│   ├── achievement-data.json   # Formatted data for Architectural Achievements module
+│   ├── scientist-data.json     # Formatted data for Scholars module
+│   ├── works-data.json         # Formatted data for Architectural Literature module
+│   └── culture-data.json       # Formatted data for Culture Inheritance module
+├── py/
+│   └── data-processing.py      # Automated Python script for data parsing & conversion
+├── image/                      # Static image assets
 │   ├── gugong.jpg
+│   ├── changcheng.jpg
 │   └── suzhouyuanlin.jpg
-├── index.html
-├── js
-│   ├── achievement.js
-│   ├── culture.js
-│   ├── scientist.js
-│   └── works.js
-├── python
-│   └── data-processing.py
-├── scientist.html
-└── works.html
+└── README.md                   # Project documentation
 ```
 
 ## 📜 License
