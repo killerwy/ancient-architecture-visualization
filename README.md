@@ -2,17 +2,19 @@
 
 > An interactive data visualization platform exploring ancient Chinese architectural achievements and history.
 
+[English](./README.md) | [中文](./README_zh.md)
+
 ![GitHub stars](https://img.shields.io/github/stars/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
 ## 📑 Table of Contents
 
-- [Description](#description)
-- [Key Features](#key-features)
-- [Use Cases](#use-cases)
-- [Quick Start](#quick-start)
-- [Data Processing](#data-processing)
-- [Project Structure](#project-structure)
-- [License](#license)
+- [Description](#-description)
+- [Key Features](#-key-features)
+- [Use Cases](#-use-cases)
+- [Quick Start](#-quick-start)
+- [Data Processing](#-data-processing)
+- [Project Structure](#-project-structure)
+- [License](#-license)
 
 ## 📝 Description
 
@@ -75,7 +77,7 @@ http-server -p 8080
 
 Open your browser and visit: http://localhost:8080
 
-## 🖥️ Data Processing
+## 💻 Data Processing
 
 1. Install Dependencies
 
