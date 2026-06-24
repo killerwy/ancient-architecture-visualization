@@ -4,7 +4,15 @@
 
 [English](./README.md) | [中文](./README_zh.md)
 
-![GitHub stars](https://img.shields.io/github/stars/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) 
+![GitHub forks](https://img.shields.io/github/forks/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) 
+![GitHub issues](https://img.shields.io/github/issues/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) 
+![Last commit](https://img.shields.io/github/last-commit/killerwy/ancient-architecture-visualization?style=for-the-badge&logo=github) 
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 
 ## 📑 Table of Contents
 
