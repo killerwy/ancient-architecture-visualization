@@ -19,6 +19,7 @@
 - [Description](#-description)
 - [Key Features](#-key-features)
 - [Use Cases](#-use-cases)
+- [Tech Stack](#-tech-stack)
 - [Quick Start](#-quick-start)
 - [Data Processing](#-data-processing)
 - [Project Structure](#-project-structure)
@@ -40,6 +41,12 @@ ancient-architecture-visualization is a web-based data visualization project ded
 - Developing interactive educational exhibits or academic presentations on the history of Chinese engineering and science.
 - Using the codebase as a template for building localized, static data visualization projects with lightweight assets.
 - Providing self-directed learning tools for individuals researching ancient architectural structures and notable historical builders.
+
+## 🔧 Tech Stack
+
+- Programming Languages: HTML, CSS, JavaScript, Python
+- Libraries: ECharts, Pandas
+- Database: Excel
 
 ## ⚡ Quick Start
 
@@ -108,7 +115,6 @@ The success message means JSON data files are updated.
 ## 📁 Project Structure
 
 ```
-.
 architecture-visualization/
 ├── index.html              # Project Homepage
 ├── achievement.html        # Architectural Achievements Visualization Page
@@ -134,7 +140,10 @@ architecture-visualization/
 │   ├── gugong.jpg
 │   ├── changcheng.jpg
 │   └── suzhouyuanlin.jpg
-└── README.md                   # Project documentation
+├── README.md                    # English project documentation
+├── README_zh.md                 # Chinese project documentation
+├── LICENSE                      # Open-source license file for the project
+└── .gitignore                   # Git version control ignore configuration file
 ```
 
 ## 📜 License

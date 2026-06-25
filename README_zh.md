@@ -19,6 +19,7 @@
 - [项目介绍](#-项目介绍)
 - [核心功能](#-核心功能)
 - [适用场景](#-适用场景)
+- [技术栈](#-技术栈)
 - [快速开始](#-快速开始)
 - [数据处理](#-数据处理)
 - [项目结构](#-项目结构)
@@ -40,6 +41,12 @@
 - 制作关于中国工程技术史、建筑史的交互式教学展项或学术演示文稿；
 - 作为轻量化静态数据可视化项目的模板，快速搭建本地化的可视化应用；
 - 为研究古代建筑形制、著名匠师的人员提供自主学习工具。
+
+## 🔧 技术栈
+
+- 编程语言：C、C++
+- 库：ECharts、Pandas
+- 数据库：Excel
 
 ## ⚡ 快速开始
 
@@ -95,7 +102,6 @@ python py/data-processing.py
 ## 📁 项目结构
 
 ```
-.
 architecture-visualization/
 ├── index.html              # 项目首页
 ├── achievement.html        # 建筑成就可视化页面
@@ -118,10 +124,13 @@ architecture-visualization/
 ├── py/
 │   └── data-processing.py      # 自动化数据解析与转换Python脚本
 ├── image/                      # 静态图片资源
-│   ├── gugong.jpg（故宫）
-│   ├── changcheng.jpg（长城）
-│   └── suzhouyuanlin.jpg（苏州园林）
-└── README.md                   # 项目说明文档
+│   ├── gugong.jpg
+│   ├── changcheng.jpg
+│   └── suzhouyuanlin.jpg
+├── README.md                    # 英文项目说明文档
+├── README_zh.md                 # 中文项目说明文档
+├── LICENSE                      # 项目开源许可证文件
+└── .gitignore                   # Git 版本控制忽略文件配置
 ```
 
 ## 📜 许可证
