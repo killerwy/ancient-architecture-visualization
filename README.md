@@ -135,7 +135,8 @@ architecture-visualization/
 │   ├── works-data.json         # Formatted data for Architectural Literature module
 │   └── culture-data.json       # Formatted data for Culture Inheritance module
 ├── py/
-│   └── data-processing.py      # Automated Python script for data parsing & conversion
+│   ├── data-processing.py      # Automated Python script for data parsing & conversion
+│   └── requirements.txt        # Python environment dependency list
 ├── image/                      # Static image assets
 │   ├── gugong.jpg
 │   ├── changcheng.jpg
