@@ -122,7 +122,8 @@ architecture-visualization/
 │   ├── works-data.json         # 建筑著作模块格式化数据
 │   └── culture-data.json       # 文化传承模块格式化数据
 ├── py/
-│   └── data-processing.py      # 自动化数据解析与转换Python脚本
+│   ├── data-processing.py      # 自动化数据解析与转换Python脚本
+│   └── requirements.txt        # Python运行环境依赖清单
 ├── image/                      # 静态图片资源
 │   ├── gugong.jpg
 │   ├── changcheng.jpg
